@@ -13,13 +13,13 @@ class Usuario:
     def set_nome(self, nome):
         self.__nome = nome
 
-    def get_nome(self):
+    def get_nome(self):#retorna o nome quando solicitado
         return self.__nome
     
     def set_email(self, email):
         self.__email = email
     
-    def get_mail(self):
+    def get_mail(self):#Retorna o email quando solicitado
         return self.__email
     
     def alterar_senha(self, senha_antiga, senha_nova):
@@ -50,7 +50,7 @@ class Usuario:
         print(f'ativo: {self.__ativo}')
         print(f'senha: {self.__senha}')
 
-user1 = Usuario("Terebentina Teles", "tere@mail.com.br", "123456")
+user1 = Usuario("Michelle", "michelle@gmail.com.br", "123456")
 
 try:
     print(user1.__nome)
@@ -61,3 +61,9 @@ except AttributeError as e:
 print(user1.get_nome())
 print(user1.get_senha())
 print(user1.get_mail())
+
+user2 = Usuario("Matheus", "matheus@gmail.com", "654321")
+
+print(user2.get_nome())
+print(user2.get_senha())
+print(user2.get_mail())
