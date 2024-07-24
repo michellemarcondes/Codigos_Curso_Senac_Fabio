@@ -27,8 +27,8 @@ class gerente(funcionario):
           self.funcionarios.append(funcionario)
           print(f"{funcionario.nome} foi contratado(a) como {funcionario.cargo}.")
 
-    def demitir(self, funcionario):
-     if funcionario in self.funcionarios:
+     def demitir(self, funcionario):
+        if funcionario in self.funcionarios:
           print(f"{funcionario.nome} foi demitido(a) do cargo de {funcionario.cargo}.")
         else:
           print(f"{funcionario.nome} não esta na lista de funcionarios.")
