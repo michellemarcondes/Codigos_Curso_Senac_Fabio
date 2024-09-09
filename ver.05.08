@@ -1,0 +1,25 @@
+class Calc:
+    def div(self, numerador, denominador):
+        
+        try:
+            resultado = numerador / denominador
+            
+        except ZeroDivisionError as e:
+            print(f"Não existe divisão por 0! Info: {e}")
+            return None
+        except TypeError as e:  
+            print(f"Tipo de dado invalido! Info: {e}")
+            return None
+        else:
+            return resultado
+        
+        finally:
+            print("Fim da execução!")
+        
+calc = Calc()
+
+print(calc.div(20,2))
+
+print(calc.div(20,0))
+
+print(calc.div(20,"batata"))

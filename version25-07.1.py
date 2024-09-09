@@ -233,6 +233,5 @@ def main():
         else:
             print("Login ou senha inválidos. Tente novamente.")
 
-
 if __name__ == "__main__":
     main()
