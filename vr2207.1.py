@@ -73,22 +73,6 @@ class Gerente(Funcionario):
         else:
             print(f"{funcionario.get_nome()} não está na lista de funcionários.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Exemplo de uso
 funcionario1 = Funcionario("João", "Analista", 3000, "Financeiro")
 funcionario2 = Funcionario("Ana", "Assistente", 2000, "Recursos Humanos")
@@ -114,6 +98,7 @@ funcionario2.detalhes()
 
 
 
-#ideia: criar menu com senha, ou seja, Menu: nome, cargo e senha; conferir se a senha bate e então acessar o menu correspondente. Funcionarios o menu tem: Consultar salario, consultar lotação e solicitar aumento.
+#ideia: criar menu com senha, ou seja, Menu: nome, cargo e senha; conferir se a senha bate e então acessar o menu correspondente.
+#Funcionarios o menu tem: Consultar salario, consultar lotação e solicitar aumento.
 # No menu de gerente tem as funções: consultar salario, consulatr lotação, solicitar aumento, demitir e contratar.
 #No menu de diretor tem as funções: consultar salario, consultar lotação, Aprovar o aumento de salario, demitir e contratar gerente
